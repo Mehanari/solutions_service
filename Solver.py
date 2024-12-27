@@ -26,8 +26,8 @@ class Solver:
                                   name=workstation.name)
             clients[workstation.name] = client
             clients_names.append(workstation.name)
-            m.add_edge(frm=depot, to=client, distance=int(workstation.depo_distance))
-            m.add_edge(frm=client, to=depot, distance=int(workstation.depo_distance))
+            m.add_edge(frm=depot, to=client, distance=int(workstation.depot_distance))
+            m.add_edge(frm=client, to=depot, distance=int(workstation.depot_distance))
         transport_costs = schema.get_transportation_costs()
         for transport_cost in transport_costs:
             from_client = clients[transport_cost.get_from().name]
