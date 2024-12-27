@@ -183,3 +183,5 @@ fabric.properties
 
 # idea folder, uncomment if you don't need it
 .idea
+dummy_schema_generator.py
+test.py
