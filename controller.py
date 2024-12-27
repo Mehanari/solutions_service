@@ -44,3 +44,8 @@ async def solve(schema: Schema):
         return {"solution": solution}
     except Exception as e:
         return {"error": str(e)}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="localhost", port=8003)
