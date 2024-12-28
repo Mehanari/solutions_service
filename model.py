@@ -106,7 +106,7 @@ class Schema(BaseModel):
     id: int
     workstations: Set[WorkStation] = set()
     transportation_costs: Set[TransportationCost] = set()
-    amr_parameters: AMRParameters = AMRParameters(quantity=0, capacity=0.0)
+    amr_parameters: AMRParameters = AMRParameters(quantity=0, capacity=0)
 
     def add_workstation(self, station: WorkStation):
         self.workstations.add(station)
